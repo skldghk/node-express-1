@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+</head>
+<body>
+  <h1>Todo List</h1>
+  
+  <form id="todoForm">
+    <input type="text" id="titleInput" placeholder="할 일 제목" required>
+    <input type="text" id="descriptionInput" placeholder="할 일 내용" required>
+    <select id="prioritySelect">
+      <option value="1">1순위</option>
+      <option value="2">2순위</option>
+      <option value="3">3순위</option>
+    </select>
+    <button type="submit">추가</button>
+  </form>
+  
+  <ul id="todoList"></ul>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="frontend.js"></script>
+</body>
+</html>
